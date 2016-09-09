@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/// <summary>
-/// 玩家对象控制
-/// </summary>
 public class PlayerCtrl : MonoBehaviour {
 
 

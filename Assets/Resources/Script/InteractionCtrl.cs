@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/// <summary>
-/// 相互控制
-/// </summary>
 public class InteractionCtrl : MonoBehaviour {
+
 
     //点击屏幕事件
     public delegate void MouseDown();

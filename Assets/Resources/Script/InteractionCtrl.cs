@@ -2,7 +2,7 @@
 using System.Collections;
 
 /// <summary>
-/// 相互控制
+/// 交互控制
 /// </summary>
 public class InteractionCtrl : MonoBehaviour {
 

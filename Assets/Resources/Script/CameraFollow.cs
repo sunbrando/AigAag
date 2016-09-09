@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 相机跟随目标
+/// </summary>
 public class CameraFollow : MonoBehaviour {
 
     public GameObject followTarget;

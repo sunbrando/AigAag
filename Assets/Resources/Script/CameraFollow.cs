@@ -27,8 +27,10 @@ public class CameraFollow : MonoBehaviour {
         //float deltaPosZ = followTarget.transform.position.z - mLastPosition.z;
         //mLastPosition = followTarget.transform.position;
         //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + deltaPosZ);
-
-        transform.position = new Vector3(mCamFirstPos.x + followTarget.transform.position.x, mCamFirstPos.y + followTarget.transform.position.y, mCamFirstPos.z + followTarget.transform.position.z);
+        if (mLastPosition.y == followTarget.transform.position.y)
+        {
+            transform.position = new Vector3(mCamFirstPos.x + followTarget.transform.position.x, mCamFirstPos.y + followTarget.transform.position.y, mCamFirstPos.z + followTarget.transform.position.z);
+        }
 
     }
 }

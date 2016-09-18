@@ -25,11 +25,13 @@ public class CameraFollow : MonoBehaviour {
 
     void LateUpdate()
     {
-        if (mFirstTagPosition.y == followTarget.transform.position.y)
+        if (Mathf.Abs(mFirstTagPosition.y - followTarget.transform.position.y) < 1)
         {
             transform.position = UpdateCamPosition(mCamFirstPos, followTarget.transform.position, mLastTagPosition, Time.deltaTime);
         }
         mLastTagPosition = followTarget.transform.position;
+
+        //CameraMove();
     }
 
     //更新相机的位置
@@ -39,8 +41,9 @@ public class CameraFollow : MonoBehaviour {
         //float deltaPosZ = Mathf.Lerp(0, tagNowPos.z - tagLastPos.z, deltaTime);
         //Vector3 position = new Vector3(camFirstPos.x + tagLastPos.x + deltaPosX, camFirstPos.y + tagLastPos.y, camFirstPos.z + tagLastPos.z + deltaPosZ);
 
-        Vector3 position = new Vector3(camFirstPos.x + tagNowPos.x, camFirstPos.y + tagNowPos.y, camFirstPos.z + tagNowPos.z);
+        Vector3 position = camFirstPos + tagNowPos ;
 
         return position;
     }
+
 }

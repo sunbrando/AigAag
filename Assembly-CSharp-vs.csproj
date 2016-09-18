@@ -46,9 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resources\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Resources\Script\Camera\CameraCtrl.cs" />
+     <Compile Include="Assets\Resources\Script\Camera\CameraFollow.cs" />
+     <Compile Include="Assets\Resources\Script\Cube\CreateCube.cs" />
+     <Compile Include="Assets\Resources\Script\Cube\PlatformCtrl.cs" />
      <Compile Include="Assets\Resources\Script\InteractionCtrl.cs" />
-     <Compile Include="Assets\Resources\Script\PlayerCtrl.cs" />
+     <Compile Include="Assets\Resources\Script\Player\PlayerCtrl.cs" />
+     <Compile Include="Assets\Resources\Script\Utility\Config.cs" />
+     <Compile Include="Assets\Resources\Script\Utility\Convention.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Unity5.0/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
